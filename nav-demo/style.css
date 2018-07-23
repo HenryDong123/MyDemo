@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+
+}
+
+main{
+    text-align: center;
+}
+
+kbd{
+    border: black 1px solid;
+    width: 4em;
+    height: 4em;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+}
+
+kbd > button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+
+}
+
+kbd:hover > button{
+    display: inline-block;
+}
+
+#mainx{
+    display: inline-block;
+}
+
+
