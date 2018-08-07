@@ -6,14 +6,15 @@ window.onload = function () {
 
 
     var eraserEnabled = false
-    eraser.onclick = function () {
-        eraserEnabled = true
-        actions.className = 'actions x'
-
-    }
-    brush.onclick = function () {
+    pencil.onclick = function(){
         eraserEnabled = false
-        actions.className = 'actions'
+        pencil.classList.add('active')
+        eraser.classList.remove('active')
+    }
+    eraser.onclick = function(){
+        eraserEnabled = true
+        eraser.classList.add('active')
+        pencil.classList.remove('active')
     }
 
 
@@ -111,7 +112,7 @@ window.onload = function () {
                 var y = a.clientY
                 using = true
                 if (eraserEnabled) {
-                    context.clearRect(x - 5, y - 5, 10, 10)
+                    context.clearRect(x-5, y-5, 10, 10)
                 } else {
                     lastPoint = {"x": x, "y": y}
                 }
@@ -129,7 +130,7 @@ window.onload = function () {
 
                 if (eraserEnabled) {
 
-                    context.clearRect(x - 5, y - 5, 10, 10)
+                    context.clearRect(x-5, y-5, 10, 10)
 
 
                 } else {

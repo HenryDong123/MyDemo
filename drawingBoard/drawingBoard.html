@@ -5,14 +5,20 @@
     <title>画板</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./js.js"></script>
+    <script src="//at.alicdn.com/t/font_781528_qzdz1eibqq.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" >
 </head>
 <body>
 
 <canvas id="canvas" width="300" height="300"></canvas>
 <div id="actions" class="actions">
-    <button id="eraser">橡皮擦</button>
-    <button id="brush">画笔</button>
+    <svg id="pencil" class="icon active ">
+        <use   xlink:href="#icon-pen"></use>
+    </svg>
+    <svg id="eraser" class="icon">
+        <use  xlink:href="#icon-erase"></use>
+    </svg>
+
 </div>
 
 
