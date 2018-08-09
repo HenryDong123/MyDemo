@@ -17,6 +17,28 @@ window.onload = function () {
         pencil.classList.remove('active')
     }
 
+    red.onclick = function () {
+        context.strokeStyle = 'red'
+        context.fillStyle = 'red'
+        red.classList.add('active')
+        green.classList.remove('active')
+        blue.classList.remove('active')
+    }
+
+    green.onclick = function () {
+        context.strokeStyle = 'green'
+        context.fillStyle = 'green'
+        green.classList.add('active')
+        red.classList.remove('active')
+        blue.classList.remove('active')
+    }
+    blue.onclick = function () {
+        context.strokeStyle = 'blue'
+        context.fillStyle = 'blue'
+        blue.classList.add('active')
+        green.classList.remove('active')
+        red.classList.remove('active')
+    }
 
     /***/
     function autoSetCanvas(canvas) {
@@ -40,7 +62,6 @@ window.onload = function () {
 
     function drawCircle(x, y, radius) {
         context.beginPath()
-        context.fillStyle = 'black'
         context.arc(x, y, radius, 0, Math.PI * 2);
         context.fill()
     }
