@@ -70,6 +70,10 @@ body {
 
 }
 
+.colors> li.black{
+    background: black;
+}
+
 .colors> li.red{
     background: red;
 }
@@ -80,4 +84,27 @@ body {
 
 .colors> li.blue{
     background: blue;
+}
+
+.size{
+    position: fixed;
+    right: 20px;
+    top: 0;
+}
+
+.size > li{
+    margin: 20px 0;
+}
+
+
+.size > .thin{
+    height: 0;
+    width: 20px;
+    border-top: 3px solid black;
+}
+
+.size > .thick{
+    height: 0;
+    width: 20px;
+    border-top: 6px solid black;
 }
